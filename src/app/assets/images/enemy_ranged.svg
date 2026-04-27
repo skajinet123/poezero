@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="rangedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9d4ad9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3a1e5f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="magicGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Тело мага/стрелка -->
+  <ellipse cx="32" cy="38" rx="16" ry="20" fill="url(#rangedGrad)"/>
+  
+  <!-- Капюшон/шляпа -->
+  <path d="M 18 20 Q 32 0 46 20 L 44 24 Q 32 12 20 24 Z" fill="#6a3a9f"/>
+  
+  <!-- Лицо под капюшоном -->
+  <ellipse cx="32" cy="24" rx="10" ry="12" fill="#8a5a9f"/>
+  
+  <!-- Магические глаза -->
+  <ellipse cx="27" cy="22" rx="4" ry="5" fill="#00ffff"/>
+  <ellipse cx="37" cy="22" rx="4" ry="5" fill="#ff00ff"/>
+  <ellipse cx="27" cy="22" rx="1.5" ry="2" fill="#ffffff"/>
+  <ellipse cx="37" cy="22" rx="1.5" ry="2" fill="#ffffff"/>
+  
+  <!-- Рукава -->
+  <ellipse cx="16" cy="42" rx="6" ry="10" fill="#7a4aaf"/>
+  <ellipse cx="48" cy="42" rx="6" ry="10" fill="#7a4aaf"/>
+  
+  <!-- Магический посох -->
+  <rect x="50" y="15" width="4" height="35" fill="#8b4513" rx="2"/>
+  <circle cx="52" cy="15" r="6" fill="url(#magicGrad)">
+    <animate attributeName="r" values="6;8;6" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Магическая аура вокруг посоха -->
+  <circle cx="52" cy="15" r="10" fill="none" stroke="url(#magicGrad)" stroke-width="2" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Ноги в ботинках -->
+  <ellipse cx="26" cy="56" rx="5" ry="6" fill="#4a2a6f"/>
+  <ellipse cx="38" cy="56" rx="5" ry="6" fill="#4a2a6f"/>
+  
+  <!-- Магические частицы -->
+  <circle cx="20" cy="30" r="2" fill="#00ffff" opacity="0.7">
+    <animate attributeName="cy" values="30;25;30" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="44" cy="35" r="2" fill="#ff00ff" opacity="0.7">
+    <animate attributeName="cy" values="35;30;35" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

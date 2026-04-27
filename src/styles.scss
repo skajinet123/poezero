@@ -1,0 +1,14 @@
+/* Глобальные стили для ARPG игры */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0a0a1a;
+  color: #fff;
+  overflow: hidden;
+}

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="tankGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a9d4a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e5f1e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="armorPlate" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6b9b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3d7d3d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Огромное тело гиганта/танка -->
+  <ellipse cx="32" cy="40" rx="24" ry="24" fill="url(#tankGrad)"/>
+  
+  <!-- Броня на груди -->
+  <ellipse cx="32" cy="38" rx="18" ry="16" fill="url(#armorPlate)"/>
+  <path d="M 22 30 L 42 30 L 40 45 L 24 45 Z" fill="#5b8b5b" stroke="#3d6d3d" stroke-width="2"/>
+  
+  <!-- Голова -->
+  <ellipse cx="32" cy="20" rx="16" ry="18" fill="#5a9a5a"/>
+  
+  <!-- Маленькие злые глаза -->
+  <ellipse cx="26" cy="18" rx="4" ry="5" fill="#ff6600"/>
+  <ellipse cx="38" cy="18" rx="4" ry="5" fill="#ff6600"/>
+  <ellipse cx="27" cy="18" rx="1.5" ry="2" fill="#ffffff"/>
+  <ellipse cx="37" cy="18" rx="1.5" ry="2" fill="#ffffff"/>
+  
+  <!-- Брови (грозные) -->
+  <path d="M 22 14 L 30 16" stroke="#2d5d2d" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 42 14 L 34 16" stroke="#2d5d2d" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Широкий рот -->
+  <path d="M 24 28 Q 32 32 40 28" stroke="#2d5d2d" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Огромные мускулистые руки -->
+  <ellipse cx="12" cy="42" rx="10" ry="14" fill="#4a8a4a"/>
+  <ellipse cx="52" cy="42" rx="10" ry="14" fill="#4a8a4a"/>
+  
+  <!-- Кулаки -->
+  <circle cx="10" cy="52" r="8" fill="#5a9a5a"/>
+  <circle cx="54" cy="52" r="8" fill="#5a9a5a"/>
+  
+  <!-- Плечи (очень большие) -->
+  <circle cx="12" cy="28" r="12" fill="#6baa6b"/>
+  <circle cx="52" cy="28" r="12" fill="#6baa6b"/>
+  
+  <!-- Ноги (короткие и мощные) -->
+  <ellipse cx="22" cy="60" rx="8" ry="6" fill="#3d7d3d"/>
+  <ellipse cx="42" cy="60" rx="8" ry="6" fill="#3d7d3d"/>
+  
+  <!-- Пояс с броней -->
+  <rect x="18" y="52" width="28" height="6" fill="#555" rx="2"/>
+  <circle cx="32" cy="55" r="3" fill="#ffd700"/>
+  
+  <!-- Аура угрозы -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#ff4400" stroke-width="3" opacity="0.4">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Шрамы на броне -->
+  <path d="M 26 34 L 30 38" stroke="#2d5d2d" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 38 34 L 34 38" stroke="#2d5d2d" stroke-width="2" stroke-linecap="round"/>
+</svg>
